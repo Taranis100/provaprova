@@ -1,0 +1,6 @@
+<div>
+    <p>Ti è piaciuta la serie: "{{ series }}"?</p>
+    <button (click)="onVote(true)">Sì</button>
+    <button (click)="onVote(false)">No</button>
+    <p>Status: {{ voteStatus }}</p> <!-- Mostra lo stato attuale della valutazione -->
+  </div>

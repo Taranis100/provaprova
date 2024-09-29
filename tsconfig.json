@@ -1,0 +1,42 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "Node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ESNext", // Questo è corretto, mantienilo come ESNext
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "baseUrl": "./src", // Assicurati che il baseUrl punti alla cartella src
+    "paths": {
+      "*": ["node_modules/*", "*"] // Permette di risolvere i moduli
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "include": [
+    "src/**/*" // Assicurati di includere tutti i file nella cartella src
+  ],
+  "exclude": [
+    "node_modules", // Escludi la cartella node_modules
+    "**/*.spec.ts" // Escludi i file di test, se non necessari
+  ]
+}

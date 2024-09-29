@@ -1,0 +1,29 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Occupare l'altezza della finestra */
+  background-color: #f5f5f5; /* Colore di sfondo */
+}
+
+.login-card {
+  width: 400px; /* Larghezza del card */
+  padding: 20px; /* Spaziatura interna */
+  border-radius: 8px; /* Bordo arrotondato */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombra per effetto di profondità */
+}
+
+.login-title {
+  text-align: center; /* Centrare il titolo */
+  margin-bottom: 20px; /* Spazio sotto il titolo */
+  font-size: 24px; /* Dimensione del font */
+  color: #333; /* Colore del font */
+}
+
+mat-form-field {
+  width: 100%; /* Larghezza completa per i campi di input */
+}
+
+button {
+  width: 100%; /* Larghezza completa per il bottone */
+}

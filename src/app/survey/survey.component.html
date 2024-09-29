@@ -1,0 +1,15 @@
+<!-- survey.component.html -->
+<h1>Survey Page</h1>
+<p>Benvenuto nel survey!</p>
+<a routerLink="/login">Torna al Login</a> 
+<a routerLink="/list">Vai alla Lista Clienti</a> 
+<h2>Ti sono piaciute le seguenti serie televisive?</h2>
+
+<div *ngFor="let series of seriesList">
+  <app-series-question [series]="series.title" (vote)="onSeriesVote($event)"></app-series-question>
+</div>
+
+<h3>Riepilogo:</h3>
+<p>Serie piaciute: {{ totalLiked }}</p>
+<p>Serie non piaciute: {{ totalDisliked }}</p>
+<p>Serie ancora da valutare: {{ totalUnrated }}</p>
